@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="section-title">
+        <div>
+            <p>세</p>
+            <p>상</p>
+            <p>을</p>
+        </div>
+        <div>
+            <p>움</p>
+            <p>직</p>
+            <p>이</p>
+            <p>고</p>
+            <p>,</p>
+        </div>
+        <div>
+            <p>새</p>
+            <p>로</p>
+            <p>운</p>
+        </div>
+        <div>
+            <p>변</p>
+            <p>화</p>
+            <p>를</p>
+        </div>
+        <div>
+            <p>일</p>
+            <p>으</p>
+            <p>킬</p>
+        </div>
+        <div>
+            <p>인</p>
+            <p>재</p>
+            <p>를</p>
+        </div>
+        <div>
+            <p>찾</p>
+            <p>습</p>
+            <p>니</p>
+            <p>다</p>
+            <p>.</p>
+        </div>
+    </div>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+
+    <script>
+        let sectionTitle = $(".section-title");
+        let sectionTitleText = $(".section-title > div");
+        function init() {
+            for (let i = 0; i < sectionTitleText.length; i++) {
+                TweenMax.fromTo(sectionTitleText[i], 1, { opacity: 0, y: 10 }, { opacity: 1, y: 0, delay: `${i / 2}`, ease: Cubic.ease });
+            }
+        }
+        init();
+    </script>
+</body>
+
+</html>

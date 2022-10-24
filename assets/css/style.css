@@ -1,0 +1,9 @@
+.section-title > div {
+  display: inline-block;
+  opacity: 0;
+}
+.section-title > div p {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
